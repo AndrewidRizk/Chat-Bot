@@ -10,7 +10,7 @@ pip install openAi
 
 import openai
 
-openai.api_key = "INSERT YOUR KEY"
+openai.api_key = "INSERT YOUR KEY" https://beta.openai.com/account/api-keys
 
 pip install pyttsx3
 
