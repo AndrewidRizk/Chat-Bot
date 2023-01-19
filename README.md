@@ -8,9 +8,13 @@ Python AiChatBot: That uses openAI API to get the responses from the user, and p
 
 pip install openAi
 
+import openai
+
 openai.api_key = "INSERT YOUR KEY"
 
 pip install pyttsx3
+
+import pyttsx3
 
 engine = pyttsx3.init()
 
