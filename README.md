@@ -1,5 +1,5 @@
 # Chat-Bot
-Python AiChatBot: That uses openAI API to get the responses from the user, and pyttsx3 API to read the message out loud for the user. Designing the GUI on tkinter.
+Python AiChatBot: That uses openAI API to get the responses from the user input, and pyttsx3 API to read the last message out loud for the user. Designed on the GUI tkinter.
 
 ![image](https://user-images.githubusercontent.com/97995173/213363400-9bc54a25-b9eb-4004-9306-3625e4af18c7.png)
 
