@@ -1,11 +1,14 @@
+# import the required packages
 import openai
 import tkinter as tk
 import pyttsx3
 
+#initializing  
 engine = pyttsx3.init()
-openai.api_key = "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"
+openai.api_key = "Your Key" #https://beta.openai.com/account/api-keys
 previous_messages = []
 
+#getting the response accouring to the passed message
 def get_response(prompt):
     completions = openai.Completion.create(
         engine="text-davinci-002",
@@ -18,13 +21,14 @@ def get_response(prompt):
     message = completions.choices[0].text
     return message.strip()
 
+#speak the last response
 def speak_response():
     last_response = previous_messages[-1]
     engine.say(last_response)
     engine.runAndWait()
 
 
-
+# handling the input
 def handle_input():
     user_input = input_field.get()
     previous_messages.append(f"You: {user_input}")
